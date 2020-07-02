@@ -1,0 +1,123 @@
+/* Body and Etc */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  padding-top: 56px;
+}
+
+/* Left Bar */
+.leftBar {
+  height: 97%;
+  width: 180px;
+  background-color: gray;
+  border-right: 3px black solid;
+  position: fixed;
+  padding: 15px 0px;
+  overflow: hidden;
+}
+
+.avatar {
+  border-radius: 100%;
+  width: 70%;
+  margin: auto;
+  display: block;
+}
+
+.updateButton {
+  background-color: gray;
+  border: none;
+  font-size: 12px;
+  color: aliceblue;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+.testLink {
+  margin: 15px 0px;
+  padding: 0px 6px;
+  display: block;
+  color: aliceblue;
+  border-bottom: 1px solid black;
+  font-size: 22px;
+}
+
+.barItem {
+  margin: 15px 0px;
+  left: 6px;
+  font-size: 25px;
+}
+
+/* Content Body */
+.contentBody {
+  height: 97%;
+  margin-left: 180px;
+}
+
+.div1 {
+  width: 100%;
+  height: 50%;
+  background-color: #343a40;
+  float: left;
+}
+.div2 {
+  width: 100%;
+  height: 50%;
+  background-color: gray;
+  float: left;
+}
+
+.workCounter {
+  margin: 5px;
+}
+/* Animation */
+@keyframes hide {
+  0% {
+    width: 180px;
+    border: 3px;
+  }
+
+  100% {
+    width: 0px;
+    border: 0px;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    margin-left: 180px;
+  }
+
+  100% {
+    margin-left: 0px;
+  }
+}
+
+/* Media? */ 
+@media screen and (max-width: 1024px){
+  .leftBar {
+    display: flex;
+    animation: hide 0.5s ease forwards;
+  }
+
+  .contentBody {
+    animation: stretch 0.5s ease forwards;
+  }
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  margin: 0px;
+  padding: 0px;
+  top: 97%;
+  bottom: 0%;
+  position: fixed;
+  background-color: #343a40;
+  color: aliceblue;
+}
